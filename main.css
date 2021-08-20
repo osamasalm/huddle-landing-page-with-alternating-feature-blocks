@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--VeryDarkCyan);
+}
+
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --VeryPaleCyan: hsl(193, 100%, 96%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --GrayishBlue: hsl(208, 11%, 55%);
+    --white: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.7;
+}
+
+header {
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--VeryPaleCyan);
+    width: 100vw;
+    padding-bottom: 5em;
+    margin-bottom: 10em;
+}
+
+nav {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 4em;
+    padding-top: 3.125em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    color: var(--VeryDarkCyan);
+    background-color: var(--white);
+    font-weight: 700;
+    padding: 1em 5em;
+    border-radius: 5em;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    transition: opacity 200ms;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.header-txt {
+    width: 45%;
+}
+
+.header-txt h1 {
+    margin-bottom: 0.5em;
+    font-size: 3.2rem;
+}
+
+.header-txt p {
+    font-size: 1.45rem;
+    opacity: 0.8;
+    margin-bottom: 2.5em;
+}
+
+.header-btn {
+    color: var(--white);
+    background-color: var(--Pink);
+    padding: 1.3em 5em;
+    border-radius: 2em;
+    font-weight: 700;
+    box-shadow: 0px 10px 15px -9px var(--Pink);
+    transition: opacity 200ms;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.header-main img {
+    width: 50%;
+}
+
+main section {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 3em;
+    padding: 4em 1em 4em 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.1);
+    border-radius: 1em;
+}
+
+section img {
+    width: 40%;
+}
+
+section .txt {
+    width: 50%;
+}
+
+.txt h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.txt p {
+    font-size: 1.2rem;
+    opacity: 0.5;
+    max-width: 27em;
+}
+
+.box {
+    background-color: var(--white);
+    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 5em;
+    text-align: center;
+    border-radius: 1em;
+    transform: translateY(33%);
+}
+
+.box h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2em;
+}
+
+.box a {
+    color: var(--white);
+    background-color: var(--Pink);
+    font-size: 1.3rem;
+    padding: 1.3em 5em;
+    border-radius: 2em;
+    font-weight: 700;
+    box-shadow: 0px 10px 15px -9px var(--Pink);
+    transition: opacity 200ms;
+}
+
+footer {
+    background-color: var(--VeryDarkCyan);
+    color: var(--white);
+    padding-top: 12em;
+    padding-bottom: 5em;
+}
+
+footer a {
+    color: var(--white);
+    transition: opacity 200ms;
+}
+
+footer img {
+    filter: brightness(0) invert(1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.one {
+    width: 30%;
+}
+
+.two {
+    width: 10%;
+}
+
+.three {
+    width: 10%;
+}
+
+.four {
+    width: 30%;
+}
+
+.two, .three{
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.two li, .three li {
+    margin-bottom: 1em;
+}
+
+.one ul li, .two,.three, .four {
+    display: flex;
+} 
+
+.one ul li {
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.one ul li img {
+    margin-top: .5em;
+    margin-right: 1.5em;
+}
+
+li {
+    list-style-type: none;
+}
+
+.four {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.four img {
+    width: 1.2em;
+}
+
+.four div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.4em;
+    border: 0.1em solid white;
+    height: 2.7em;
+    width: 2.7em;
+    border-radius: 100%;
+}
+
+.copy {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+    body {
+        text-align: center;
+    }
+
+    header {
+        background-image: url(images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    nav img {
+        width: 8em;
+    }
+
+    .header-main {
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    nav .nav-btn{
+        font-size: 0.8rem;
+        padding: 0.5em 2.5em;
+    }
+
+    .header-txt {
+        width: 100%;
+    }
+
+    .header-main img{
+        width: 100%;
+    }
+
+    .header-txt h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1em;
+    }
+
+    .header-txt p {
+        font-size: 1.1rem;
+    }
+
+    .header-txt .header-btn {
+        font-size: 0.9rem;
+    }
+
+    main section {
+        flex-direction: column;
+        padding: 3em;
+    }
+
+    main section img {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    main section .txt {
+        width: 100%;
+    }
+
+    main .box1 img, main .box3 img{
+        order: -1;
+    }
+
+    section .txt h3 {
+        font-size: 1.7rem;
+    }
+
+    section .txt p {
+        font-size: 0.8rem;
+    }
+
+    .box {
+        padding: 2em 1em;
+    }
+
+    .box h2 {
+        font-size: 1.1rem;
+    }
+
+    .box a {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        text-align: left;
+        padding-top: 7em;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex > div {
+        width: 100%;
+    }
+
+    .one {
+        margin-bottom: 2em;
+    }
+
+    .two, .three {
+        justify-content: flex-start;
+    }
+
+    .four {
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    footer .copy {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    nav .nav-btn {
+        font-size: 0.7rem;
+    }
+
+    .header-txt .header-btn {
+        font-size: 0.7rem;
+    }
+
+    .box a {
+        font-size: 0.6rem;
+    }
+}
